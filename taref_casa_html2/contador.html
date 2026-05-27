@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+
+<link rel="stylesheet" href="css/contador.css">
+
+</head>
+<body>
+
+    <div class="contador">
+
+        <h1 id="numero">0</h1>
+
+        <div class="botoes">
+            <div>
+            <button class="menos" onclick="diminuir()">
+                -
+            </button>
+            </div>
+            <div></div>
+            <button class="reset" onclick="resetar()">
+                Reset
+            </button>
+            <div>
+            <button class="mais" onclick="aumentar()">
+                +
+            </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        let contador = 0
+
+        function aumentar(){
+
+            contador++
+
+            document.getElementById("numero").textContent = contador
+        }
+
+        function diminuir(){
+
+            if(contador > 0){
+
+                contador--
+
+                document.getElementById("numero").textContent = contador
+            }
+
+        }
+
+        function resetar(){
+
+            contador = 0
+
+            document.getElementById("numero").textContent = contador
+        }
+
+    </script>
+
+</body>
+</html>
