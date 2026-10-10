@@ -13,6 +13,7 @@ body{
     background: #ececec;
 
     font-family: sans-serif;
+    flex-direction: column;
 }
 
 
@@ -21,7 +22,7 @@ body{
    
     display: flex;
 
-    flex-direction: column;
+    flex-direction: row;
 
     align-items: center;
 
@@ -70,12 +71,14 @@ button:hover{
 .mais{
 
     background: green;
+    margin-top: 20px;
 }
 
 
 .menos{
 
     background: red;
+    margin-top: 20px;
 }
 
 
@@ -95,4 +98,19 @@ div{
 
 #numero{
     background: #0062ff;
+}
+
+.dark-mode{
+
+    background: #111827;
+
+    color: white;
+}
+#inversion{
+   
+    width: 100px;
+    height: 40px;
+    background: #6a5cff;
+    color: white;
+    font-size: 14px;
 }
